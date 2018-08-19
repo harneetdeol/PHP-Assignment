@@ -1,5 +1,8 @@
 # PHP-Assignment
 Simple CRUD Rest API Appointment Booking Application for a doctor in PHP using Zend Framework and SQLite DB.
+AppointmentBookingSystem/module/Appointment
+
+The project also contains the zend framework skelton application in module/Application
 
 # DB Schema File
 data/schema.sql
