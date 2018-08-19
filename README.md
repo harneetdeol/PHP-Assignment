@@ -5,9 +5,9 @@ Simple CRUD Rest API Appointment Booking Application for a doctor in PHP using Z
 data/schema.sql
 
 # Executing Rest APIs using CURL
-# Appointments List
+## Appointments List
 
-curl -i -H "Accept: application/json" http://localhost:8080/appointment
+### curl -i -H "Accept: application/json" http://localhost:8080/appointment
 
 HTTP/1.1 200 OK
 Host: localhost:8080
