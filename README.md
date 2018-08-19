@@ -10,9 +10,13 @@ data/schema.sql
 curl -i -H "Accept: application/json" http://localhost:8080/appointment
 
 HTTP/1.1 200 OK
+
 Host: localhost:8080
+
 Connection: close
+
 X-Powered-By: PHP/5.6.37
+
 Content-Type: application/json; charset=utf-8
 
 [{"status":"success","message":"Appointments available","data":[{"id":"36","firstname":"alice","lastname":"stewart","email":"astewart@gmail.com","phone":"16041234567","address":"12345 abc Ave Surrey BC Canada","reason":"throat infection","starttime":"2018-08-30 10:00:00","endtime":"2018-08-30 10:30:00"},{"id":"37","firstname":"bob","lastname":"martin","email":"bob_martin123@gmail.com","phone":"160412347788","address":"12345 81a Ave Abbotsford BC Canada","reason":"diabetics issues","starttime":"2018-08-23 14:00:00","endtime":"2018-08-23 14:30:00"},{"id":"38","firstname":"catherine","lastname":"chow","email":"chow.catherine@gmail.com","phone":"16041239090","address":"17856 78 Ave Langley BC Canada","reason":"thyroid issues","starttime":"2018-08-31 11:00:00","endtime":"2018-08-31 11:30:00"},{"id":"39","firstname":"david","lastname":"proctor","email":"davidproctor87@gmail.com","phone":"16041230987","address":"13606 saanich street Langley BC Canada","reason":"skin infection","starttime":"2018-08-22 12:00:00","endtime":"2018-08-31 12:30:00"}]}]
