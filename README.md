@@ -8,6 +8,7 @@ data/schema.sql
 # Appointments List
 
 curl -i -H "Accept: application/json" http://localhost:8080/appointment
+
 HTTP/1.1 200 OK
 Host: localhost:8080
 Connection: close
@@ -19,6 +20,7 @@ Content-Type: application/json; charset=utf-8
 # Appointment Details
 
 curl -i -H "Accept: application/json" http://localhost:8080/appointment/36
+
 HTTP/1.1 200 OK
 Host: localhost:8080
 Connection: close
@@ -30,6 +32,7 @@ Content-Type: application/json; charset=utf-8
 # Create Appointment
 
 curl -i -H "Accept: application/json" -X POST -d "firstname=harneet&lastname=deol&email=hkdeol87@gmail.com&address=12345 89 ave surrey bc&phone=6045671234&reason=throat infection&starttime=2018-09-12 10:00:00&endtime=2018-09-12 10:30:00" http://localhost:8080/appointment
+
 HTTP/1.1 200 OK
 Host: localhost:8080
 Connection: close
@@ -41,6 +44,7 @@ Content-Type: application/json; charset=utf-8
 # Update Appointment
 
 curl -i -H "Accept: application/json" -X PUT -d "firstname=harneet&lastname=deol&email=hkdeol123@gmail.com&address=12345 89 ave surrey bc&phone=6045671234&reason=skin issues infection&starttime=2018-09-12 10:00:00&endtime=2018-09-12 10:30:00" http://localhost:8080/appointment/40
+
 HTTP/1.1 200 OK
 Host: localhost:8080
 Connection: close
@@ -51,6 +55,7 @@ Content-Type: application/json; charset=utf-8
 
 # Delete Appointment
 curl -i -H "Accept: application/json" -X DELETE http://localhost:8080/appointment/40
+
 HTTP/1.1 200 OK
 Host: localhost:8080
 Connection: close
