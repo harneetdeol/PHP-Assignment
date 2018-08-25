@@ -87,9 +87,9 @@ class AppointmentController extends AbstractRestfulController
 
         $data['id'] = $id;
 
-        $appointment = new Appointment();
         $form = new AppointmentForm();
-
+        $form->bind($appointment);
+        
         //validate data using zend forms
         $form->setInputFilter($appointment->getInputFilter());
         $form->setData($data);
@@ -99,7 +99,6 @@ class AppointmentController extends AbstractRestfulController
             return $this->createResponse("error", "Invalid Form Data Update Failed!", $formErrors);
         }
    
-        $appointment->exchangeArray($form->getData());        
         $this->table->saveAppointment($appointment);
 
         return $this->createResponse("success", "Appointment updated successfully!", $data);
